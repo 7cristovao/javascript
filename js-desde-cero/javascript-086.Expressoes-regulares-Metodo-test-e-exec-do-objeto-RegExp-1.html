@@ -1,0 +1,22 @@
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+ 
+<script type="text/javascript">
+  var oracion='saliendo de la casa que esta en la montaña';
+  var patron1=/la/;
+  var vector1=patron1.exec(oracion);
+  document.write(vector1.index);
+  document.write('<br>');
+  document.write(vector1.input);
+  document.write('<br>');
+  var patron2=/lax/;
+  var vector2=patron2.exec(oracion);
+  document.write(vector2);
+</script>
+ 
+</body>
+</html>

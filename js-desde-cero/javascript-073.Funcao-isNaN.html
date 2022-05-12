@@ -1,0 +1,40 @@
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+
+/*
+  var x=10;
+  if (isNaN(x))  //false
+    alert('no es un número');
+  var z=10.5;
+  if (isNaN(z))  //false
+    alert('no es un número');
+  var edad='77';
+  if (isNaN(edad))  //false
+    alert('no es un número');
+  var nom='juan';
+  if (isNaN(nom))  //true
+    alert('no es un número:<br><br><br><br>'+nom);
+*/
+
+  var x1,x2,suma;
+  x1=prompt('Ingrese el primer valor:','');
+  x2=prompt('Ingrese el segundo valor:','');
+  x1=parseInt(x1);
+  x2=parseInt(x2);
+  if (isNaN(x1) || isNaN(x2))
+  {
+    document.write('Al menos uno de los dos valores ingresados no es numérico.');
+  }
+  else
+  {
+    suma=x1+x2;
+    document.write('La suma de los dos valores es:'+suma);
+  }
+</script>
+</body>
+</html>
+ 

@@ -1,0 +1,41 @@
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+
+<script type="text/javascript">
+ 
+ //Ahora el mismo problema pero empleando el operador codicional ?:
+
+  var v1=prompt('Ingrese primer valor:','');
+  var v2=prompt('Ingrese segundo valor:','');
+  v1=parseInt(v1);
+  v2=parseInt(v2);
+  var mayor;
+  v1>v2 ? mayor=v1 : mayor=v2;
+  document.write('El mayor de los dos valores es:'+mayor);
+ 
+ /*
+ El operador ternario en el ejemplo lo podemos identificar en la siguiente línea:
+
+ 
+  v1>v2 ? mayor=v1 : mayor=v2;
+ 
+
+El operador ternario tiene la siguiente sintaxis:
+
+ 
+  condición <strong>?</strong> instrucción 1 <strong>:</strong> instrucción 2;
+ 
+
+La condición es lo primero que indicamos a la izquierda del carácter "?". La condición siempre debe generar un resultado de tipo boolean (true/false)
+
+Si la condición se verifica verdadera se ejecuta la instrucción 1, que es la que se encuentra a la izquierda del carácter ":", en cambio si la condición se verifica false se ejecuta la instrucción 2.
+*/
+
+</script>
+ 
+</body>
+</html>
+ 

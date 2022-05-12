@@ -1,0 +1,18 @@
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+ 
+<script type="text/javascript">
+  var oracion=prompt('Ingrese una oracion','');
+  var patron=/[\^$.*+?=!:|\\/()\[\]{}]/;
+  if (patron.test(oracion))
+    alert('La oración tiene al menos un carácter ^ $. * +? =! : | \ / () [] {}');
+  else
+    alert('La oración no tiene ningún carácter ^ $. * +? =! : | \ / () [] {}');
+</script>
+ 
+</body>
+</html>
+ 

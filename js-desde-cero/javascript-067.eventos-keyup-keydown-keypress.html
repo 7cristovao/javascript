@@ -1,0 +1,28 @@
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+ 
+  addEventListener('load',inicio,false);
+ 
+  function inicio()
+  {
+    document.getElementById('texto').addEventListener('keyup',presion,false);
+  }
+ 
+  function presion()
+  {
+    var canti=document.getElementById('texto').value.length;
+    var disponibles=140-parseInt(canti);
+    document.getElementById('cantidad').innerHTML=disponibles;
+  }
+ 
+</script>
+ 
+</head>
+<body>
+<input type="text" id="texto" maxlength="140" size="140">
+<br>
+<p>Máxima quantidade de caracteres disponíveis:<span id="cantidad">140</span></p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+ 
+  addEventListener('load',inicio,false);
+ 
+  function inicio()
+  {
+    document.getElementById('quadro1').addEventListener('mousedown',presion1,false);
+    document.getElementById('quadro2').addEventListener('mouseup',presion2,false);
+  }
+ 
+  function presion1()
+  {
+    document.getElementById('quadro1').innerHTML='Se pressionou o mouse e todavía não se soltou';
+  }
+ 
+  function presion2()
+  {
+    document.getElementById('quadro2').innerHTML='Se pressionou o mouse e se soltou';
+  }
+ 
+</script>
+ 
+</head>
+<body>
+<p>Pressione o quadro amarelo sem soltar o botão do mouse.</p>
+<div style="width:200px;height:200px;background:#ffff00" id="quadro1">
+</div>
+<p>Pressione o quadro laranja e solte o botão do mouse.</p>
+<div style="width:200px;height:200px;background:#ff5500" id="quadro2">
+</div>
+ 
+</body>
+</html>

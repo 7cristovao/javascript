@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+//O seguinte if se verifica verdadeiro já que com o operador == primeiro se transformam os dois valores ao mesmo tipo de datos prévios a verificar sua igualdade:	
+var v1='55';
+if (v1==55)
+document.write('son iguales');
+
+//Em troca o seguinte if utilizando o operador de igualdade estricta se verifica false já que são variáveis ou valores de diferentes tipos:
+var v1='55';
+if (v1===55)
+document.write('son iguales');
+
+//Los operadores != y !== son los opuestos de == y ===.
+
+/*
+O operador != retorna true se são distintos prévia conversão a um mesmo tipo de dado e o operador !== retorna true se os valores são distintos sem fazer uma conversão prévia, tendo em conta que para tipos de dados distintos é true o valor retornado.
+
+O seguinte if se verifica false:
+*/
+ 
+  var v1='55';
+  if (v1!=55)
+    document.write('son distintos');
+ 
+
+// En cambio utilizando el operador !== se verifica verdadero ya que son tipos de datos desiguales:
+
+ 
+  var v1='55';
+  if (v1!==55)
+    document.write('son distintos');
+ 
+
+/*
+El operador de igualdad estricto === analiza los operandos de la siguiente forma:
+
+    Si los dos valores son de diferente tipo luego el resultado es false.
+    Si los dos valores almacen null luego el resultado es true. Lo mismo si los dos valores almacenan undefined.
+    Si uno de los valores almacena el valor NaN luego la condición se verifica como false.
+
+El operador de igualdad == analiza los operandos de la siguiente forma:
+
+    Si los dos operandos no son del mismo tipo el operador == primero verifica si uno de los valores es null y el otro undefined luego retorna true, si uno es un número y el otro un string convierte a string el número y luego compara, si uno de los valores es true convierte este a 1 y luego compara, si uno de los valores es false convierte este a 0 (cero) y luego compara.
+
+Algunas comparaciones:
+
+*/ 
+  if (true==1)  //verdadero
+ 
+
+ 
+  if (true===1)  //falso
+ 
+
+ 
+  if (false==0)  //verdadero
+ 
+
+ 
+  if (false===0)  //falso
+    ;
+</script>
+
+</body>
+</html>

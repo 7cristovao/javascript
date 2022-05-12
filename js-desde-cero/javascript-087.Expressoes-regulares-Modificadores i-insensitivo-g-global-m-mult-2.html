@@ -1,0 +1,25 @@
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+ 
+<script type="text/javascript">
+  var oracion='El auto tiene el mejor motor que elegimos';
+  var patron=/el/gi;
+  var vec=patron.exec(oracion);
+  document.write(vec.index);  //0
+  document.write('<br>');
+  vec=patron.exec(oracion);
+  document.write(vec.index);  //14
+  document.write('<br>');
+  vec=patron.exec(oracion);
+  document.write(vec.index);  //33
+  document.write('<br>');
+  vec=patron.exec(oracion);  
+  document.write(vec);  //null
+</script>
+ 
+</body>
+</html>

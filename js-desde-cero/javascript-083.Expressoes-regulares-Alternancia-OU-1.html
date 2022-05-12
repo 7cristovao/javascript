@@ -1,0 +1,18 @@
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+ 
+<script type="text/javascript">
+  var factura=prompt('Ingrese tipo y nro de factura:','');
+  var patron=/^[a|b|c]\d+$/;
+  if (patron.test(factura))
+    document.write('Se ingresó un tipo y nro de factura correcta');
+  else
+    document.write('Se ingresó un tipo y nro de factura incorrecta');
+</script>
+ 
+</body>
+</html>

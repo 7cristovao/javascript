@@ -1,0 +1,17 @@
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+ 
+<script type="text/javascript">
+  var cadeia=prompt('Ingresse esses caracteres especiais para expressoes regulares nesta mesma ordem: ^$.*+?=!:|\/()[]{} ','');
+  var patron=/^\^\$\.\*\+\?\=\!\:\|\\\/\(\)\[\]\{\}$/;
+  if (patron.test(cadeia))
+    alert('Ordem correta');
+  else
+    alert('Incorreta');
+</script>
+ 
+</body>
+</html>

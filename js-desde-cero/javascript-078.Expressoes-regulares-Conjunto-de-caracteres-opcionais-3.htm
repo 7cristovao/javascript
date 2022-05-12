@@ -1,0 +1,17 @@
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+ 
+<script type="text/javascript">
+  var palabra=prompt('Ingrese una palabra','');
+  var patron=/[^aeiouAEIOUáéíóú]$/;
+  if (patron.test(palabra))
+    alert('La palabra no finaliza con vocal');
+  else
+    alert('La palabra finaliza con vocal');
+</script>
+ 
+</body>
+</html>

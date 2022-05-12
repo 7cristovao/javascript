@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+	<title></title>
+<script type="text/javascript">
+  var f1=function(x,y)
+  {
+    var s=x+y;
+    return s;
+  }
+ 
+  document.write(f1(4,6)+'<br>');  
+  var f2=f1;
+  document.write(f2(3,3)+'<br>');    
+ //GERA O ERRO: Uma estrutura em árvore não balanceada foi escrita através de document.write(), fazendo com que dados da rede fossem reprocessados. Mais informações em https://developer.mozilla.org/en/Optimizing_Your_Pages_for_Speculative_Parsing
+</script>
+</head>
+<body>
+</body>
+</html>
+

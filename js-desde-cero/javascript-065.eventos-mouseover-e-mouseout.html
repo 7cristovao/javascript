@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+ 
+  addEventListener('load',inicio,false);
+ 
+  function inicio()
+  {
+    document.getElementById('quadro1').addEventListener('mouseover',entrada,false);
+    document.getElementById('quadro1').addEventListener('mouseout',saida,false);
+  }
+ 
+  function entrada()
+  {
+    document.getElementById('quadro1').style.borderRadius='30px';
+  }
+ 
+  function saida()
+  {
+    document.getElementById('quadro1').style.borderRadius='0px';
+  }
+ 
+</script>
+ 
+</head>
+<body>
+<div style="width:200px;height:200px;background:#0000ff" id="quadro1">
+</div>
+ 
+</body>
+</html>

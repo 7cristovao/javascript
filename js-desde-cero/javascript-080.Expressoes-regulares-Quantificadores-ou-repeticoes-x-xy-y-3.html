@@ -1,0 +1,17 @@
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+ 
+<script type="text/javascript">
+  var patente=prompt('Ingrese un nro de patente','');
+  var patron=/^[0-9]{3}[a-z]{3}$/;
+  if (patron.test(patente))
+    alert('La patente ingresada es correcta');
+  else
+    alert('La patente ingresada no es correcta');
+</script>
+ 
+</body>
+</html>

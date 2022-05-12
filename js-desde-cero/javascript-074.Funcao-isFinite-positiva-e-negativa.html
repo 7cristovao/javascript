@@ -1,0 +1,35 @@
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+ 
+  var x1=120;
+  if (isFinite(x1)) //true
+    document.write('x1 tiene un valor finito que es el '+x1);
+  else
+    document.write('x1 no tiene un valor finito que es el '+x1);
+  document.write('<br>');
+  var x2=10e399;
+  if (isFinite(x2)) //false
+    document.write('x2 tiene un valor finito que es el '+x2);
+  else
+    document.write('x2 no tiene un valor finito que es el '+x2);
+  document.write('<br>');
+  var x3=-10e399;
+  if (isFinite(x3))  //false
+    document.write('x3 tiene un valor finito que es el '+x3);
+  else
+    document.write('x3 no tiene un valor finito que es el '+x3);
+  document.write('<br>');
+  var x4='juan';
+  if (isFinite(x4))  //false
+    document.write('x4 tiene un valor finito que es el '+x4);
+  else
+    document.write('x4 no tiene un valor finito que es el '+x4);
+ 
+</script>
+</body>
+</html>
+ 

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+
+<canvas id="myCanvas" width="200" height="100"
+style="border:1px solid #c3c3c3;">
+Seu navegador não suporta o elemento canvas.
+</canvas>
+
+<script>
+/*
+ PASSO 1: encontrar o elemento canvas
+ isso foi feito usando o elemento getElementById("myCanvas");
+*/
+var canvas = document.getElementById("myCanvas"); 
+/* 
+PASSO 2: criar um objeto de desenho
+o getContext() é um objeto HTML built in, com propriedades e métodos para desenho:
+*/
+var ctx = canvas.getContext("2d");
+/*
+PASSO 3: desenhar no canvas
+configure o estilo de preenchimento do objeto em desenho para a cor vermelha:
+A propriedade de estilo de preenchimento (fillStyle) pode ser uma cor CSS, um gradiente, ou um pattern. O estilo de preenchimento padrão (default fillStyle) é preto.
+
+O  método fillRect(x,y,width,height) desenha um retângulo, preenchido com o fill style, no canvas:
+
+*/ 
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0,0,150,75); 
+/*
+pixels preencherão e ajustarão (x,y,altura,largura)
+*/
+</script>
+
+</body>
+</html>

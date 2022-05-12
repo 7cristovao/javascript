@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+	<title></title>
+<script type="text/javascript">
+ 
+//NOVA VERSÃO CONTÉM OBJETO WINDOW INÍCIO QUE CARREGA, SEM O USO DA FUNÇÃO JAVASCRIPT VALIDAR NO MEIO DO CÓDIGO HTML
+
+  function validar()
+  {
+     var usu=document.getElementById("usuario").value;
+     var cla=document.getElementById("clave").value;
+     if (usu.length==0 || cla.length==0)
+     {
+       alert('El nombre de usuario o clave está vacío');
+       return false;
+     }
+     else
+       return true;
+  }
+ 
+</script>
+ 
+</head>
+<body>
+ 
+<form method="post" action="procesar.php" onsubmit="validar();" id="formulario1">
+Ingrese nombre:
+<input type="text" id="usuario" name="usuario" size="20">
+<br>
+Ingrese clave:
+<input type="password" id="clave" name="clave" size="20">
+<br>
+<input type="submit" id="confirmar" name="confirmar" value="Confirmar">
+</form>
+ 
+</body>
+</html>
+
