@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Eventos DOM</title>
+  <style>
+    body{
+      font-family: Sans-Serif;
+      font-size: 20px;
+    }
+    div#area{
+      font: Normal 20px Sans-Serif;
+      background-color: rgb(70, 143, 70);
+      color: white;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="area">
+  <!-- 
+  <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+  
+  <div id="area" onclick="clicar()" ontouchstart="entrar()" ontouchend="sair()">
+  -->
+  Interaja...
+  </div>
+
+<script>
+  var a = windo.document.getElementById('area')
+  a.addEventListener('click', clicar)
+  //a.addEventListener('mouseenter', entrar)
+  a.addEventListener('touchstart', entrar)
+  a.addEventListener('touchend', sair)
+  a.addEventListener('mouseout', sair)
+  function clicar(){
+    a.innerText = 'Clicou!'
+    a.style.background = 'red'
+  }
+  function entrar(){
+    a.innerText = 'Entrou!'
+    a.style.background = 'green'
+  }
+  function sair(){
+    a.innerText = 'Saiu!'
+    a.style.background = 'green'
+  }
+</script>
+</body>
+</html>

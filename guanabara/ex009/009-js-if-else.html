@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="refresh" content="text/html;charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css" media="all">
+  
+</style>
+<body>
+<h1 id="velo2">
+Velocidade
+</h1>
+
+<input type="text" name="v" id="v" value="" />
+<input type="button" name="v" id="v" value="Ver" onclick="ver()"/>
+<script>
+  function ver(){
+    var v = Number(window.document.querySelector('input#v').value)
+    if(v > 60){
+       velo2.innerHTML = `<p>ATENÇÃO: Você ultrapassou o limite de velocidade</p> Você passou a ${v} km/h`
+    }
+    else{
+       velo2.innerHTML = `Você passou a ${v} km/h`
+    }
+  }
+</script>
+</body>
+</html>

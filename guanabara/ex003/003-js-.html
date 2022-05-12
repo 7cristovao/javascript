@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Interatividade do usuário em JavaScript</title>
+  </head>
+  <style>
+    *{
+      background-color: rgb(105, 105, 173);
+    }
+    h1{
+      color: white;
+    }
+    p{
+      font-family: Sans-Serif;
+      color: white;
+    }
+  </style>
+  <body>
+    <h1>Olá mundo!</h1>
+    <p>Interatividade em JavaScript</p>
+    <script>
+         var n1 = Number.parseFloat(window.prompt("Escreva um número"))
+         var n2 = Number.parseFloat(window.prompt("Digite outro número aqui"))
+         s = n1 + n2
+         //Number.parseInt
+         window.alert("A soma de n1 + n2 é " + s)
+         //s.tostring() #convert var s p str
+         //String(s) #converte let s p str
+    </script>
+  </body>
+  </html>
