@@ -1,0 +1,39 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+ var nota1,nota2,nota3;
+
+ nota1=prompt('Digite a primeira nota: ');
+ nota2=prompt('Digite a segunda nota: ');
+ nota3=prompt('Digite a terceira nota: ');
+
+//convertemos os tres strings em inteiros
+
+ nota1=parseInt(nota1);
+ nota2=parseInt(nota2);
+ nota3=parseInt(nota3);
+ 
+ var aprovado;
+
+ aprovado=(nota1+nota2+nota3)/3;
+
+ if (aprovado>=7)
+ {
+ document.write('aprovado');
+ }
+ else
+ {
+  if (aprovado>=4)
+  {
+  document.write('recuperacao');
+  }
+  else
+  {
+  document.write('reprovado');
+  }
+ }
+</script>
+</body>
+</html>

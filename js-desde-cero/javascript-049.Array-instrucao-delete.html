@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var vec=[];
+	var f;
+	for(f=0;f<10;f++)
+	{
+		var valor=parseInt(Math.random()*1000);
+		vec.push(valor);
+	}
+	document.write('Vector antes de apagar<br>');
+	for(f=0;f<10;f++)
+	{
+		document.write(vec[f]+'<br>');
+	}
+	for(f=0;f<10;f=f+2)
+	{
+		delete vec[f];
+	}
+	document.write('Vector logo apos apagar as posicoes pares<br>');
+	for(f=0;f<10;f++)
+	{
+		document.write(vec[f]+'<br>');
+	}
+</script>
+</body>
+</html>

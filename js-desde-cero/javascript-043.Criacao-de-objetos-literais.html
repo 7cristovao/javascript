@@ -1,0 +1,34 @@
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+ <meta charset="UTF-8">
+ 	<title></title>
+ </head>
+ <body>
+ <script type="text/javascript">
+ var cliente1={
+ 	nome:'Juan',
+ 	deposito:0,
+ 	imprimir:function()
+ 	{
+ 		document.write(this.nome+'<br>');
+ 		document.write(this.deposito+'<br>');
+ 	},
+ 	depositar:function(monto){
+ 	this.deposito=this.deposito+monto;
+ 	},
+ 	extraer: function(monto){
+ 		this.deposito=this.deposito-monto;
+ 	}
+ };
+
+cliente1.imprimir();
+cliente1.depositar(1000);
+document.write('Estado logo apos depositar 1000 pesos</br>');
+cliente1.imprimir();
+cliente1.extraer(200);
+document.write('Estado logo apos saque 200 pesos</br>');
+cliente1.imprimir();
+ </script>
+ </body>
+ </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+var soldos=[];
+var monto;
+do {
+	monto=prompt('Ingresse o soldo (0 para finalizar):');
+	monto=parseInt(monto);
+	if (monto!=0)
+	{
+		soldos.push(monto);
+	}
+} while (monto!=0);
+var soma=0;
+for(var f=0;f<soldos.length;f++)
+{
+	soma=soma+soldos[f];
+}
+document.write('O total en soldos ingressados eh:'+soma);
+</script>
+</body>
+</html>

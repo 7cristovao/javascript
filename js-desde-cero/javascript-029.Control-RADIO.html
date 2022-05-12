@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+function mostrarSelecionado()
+{
+	if(document.getElementById('radio1').checked)
+	{
+		alert('nao tem estudo');
+	}
+	if(document.getElementById('radio2').checked)
+	{
+		alert('tem ensino fundamental');
+	}
+	if(document.getElementById('radio3').checked)
+	{
+		alert('tem ensino medio');
+	}
+	if(document.getElementById('radio4').checked) 
+	{
+		alert('tem ensino superior');
+	}
+}
+</script>
+<form>
+<input type="radio" id="radio1" name="estudo">Sem estudo
+<br>
+<input type="radio" id="radio2" name="estudo">Fundamental
+<br>
+<input type="radio" id="radio3" name="estudo">Medio
+<br>
+<input type="radio" id="radio4" name="estudo">Superior
+<br>
+<input type="button" value="Mostrar" onClick="mostrarSelecionado()">
+</form>
+</body>
+</html>

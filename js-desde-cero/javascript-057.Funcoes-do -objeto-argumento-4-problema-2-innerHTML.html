@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<script type="text/javascript">
+  window.onload=iniciar;
+ 
+  function iniciar()
+  {
+    gerarLista('lista1','um','dois','três','quatro','cinco','seis');
+  }
+ 
+  function gerarLista()
+  {
+    var s='<ol>';
+    var f;
+    for(f=1;f<arguments.length;f++)
+    {
+      s=s+'<li>'+arguments[f]+'</li>';
+    }
+    s=s+'</ol>';
+    var elemento1=document.getElementById(arguments[0]);
+    elemento1.innerHTML=s;
+  }
+</script>
+<body>
+<div id="lista1"></div>
+</body>
+</html>

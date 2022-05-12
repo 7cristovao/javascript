@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+	<title></title>
+<script type="text/javascript">
+ 
+ 
+  function gerarListaOrdenada(vec)
+  {
+    function comeco()
+    {
+      s='<ol>';
+    }
+ 
+    function fim()
+    {
+      s=s+'</ol>';
+    }
+ 
+    var s='';
+    comeco();
+    var f;
+    for(f=0;f<vec.length;f++)
+    {
+      s=s+'<li>'+vec[f]+'</li>';
+    }
+    fim();
+    return s;
+  }
+ 
+ 
+  onload=function() {
+    var opcoes=['Opção a','Opção b','Opção c','Opção d'];
+    document.getElementById('div1').innerHTML=gerarListaOrdenada(opcoes);
+  }
+ 
+</script>
+ 
+</head>
+<body>
+<div id="div1"></div>
+</body>
+</html>
+

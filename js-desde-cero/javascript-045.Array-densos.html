@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+var vec=[];
+var valor;
+var indice=0;
+do{
+	valor=prompt('Ingresse um valor inteiro (0 para finalizar)',"");
+	valor=parseInt(valor);
+	if(valor!=0)
+	{
+		vec[indice]=valor;
+		indice++;
+	} 
+}while(valor!=0);
+	var f;
+	var soma=0;
+	for(f=0;f<vec.length;f++)
+	{
+		soma=soma+vec[f];
+	}
+	document.write('Se ingressaram '+vec.length+' valores<br>');
+	document.write('A soma dos valores ingressados eh: '+soma);
+</script>
+</body>
+</html>

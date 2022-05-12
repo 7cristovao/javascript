@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript">
+	function Cliente(nome,saldo)
+	{
+		this.nome=nome;
+		this.saldo=saldo;
+		this.depositar=depositar;
+		this.saque=saque;
+	}
+
+	function depositar(dinheiro)
+	{
+		this.saldo=this.saldo+dinheiro;
+	}
+
+	function saque(dinheiro)
+	{
+		this.saldo=this.saldo-dinheiro;
+	}
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		var cliente1;
+		cliente1=new Cliente('diego',1200);
+		document.write('Nome do cliente:'+cliente1.nome+'<br>');
+		document.write('Saldo atual: '+cliente1.saldo)+'<br>';
+		cliente1.depositar(120);
+		document.write('<br> Saldo logo ao depositar $120---->'+cliente1.saldo+'<br>');
+		cliente1.saque(1000);
+		document.write('Saldo logo ao sacar $1000---->'+cliente1.saldo+'<br>');
+	</script>	
+</body>
+</html>

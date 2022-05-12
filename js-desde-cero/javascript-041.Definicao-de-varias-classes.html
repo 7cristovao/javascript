@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+	<title>Problema</title>
+<script type="text/javascript">
+
+//classe Numeroquinela **********************************************
+function Numeroquinela(nome)
+{
+	this.nome=nome;
+	this.carregarnumero=carregarnumero;
+	this.verificarseganhou=verificarseganhou;
+}
+
+function carregarnumero()
+{
+	this.numero=prompt("Que número de aposta você quer?","");
+}
+
+function verificarseganhou(num)
+{
+	if(this.numero==num)
+		return true;
+	else
+		return false;
+}
+
+//classe Bolicheiro ************************************************
+function Bolicheiro()
+{
+	this.numero=-1;
+	this.sortear=sortear;
+}
+
+function sortear()
+{
+	this.numero=parseInt(Math.random()*10)+1;
+}
+
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+	var numeroquinela1;
+	numeroquinela1=new Numeroquinela("Juan");
+	numeroquinela1.carregarnumero();
+	var numeroquinela2;
+	numeroquinela2=new Numeroquinela("ana");
+	numeroquinela2.carregarnumero();
+	var bolicheiro;
+	bolicheiro=new Bolicheiro();
+	bolicheiro.sortear();
+	document.write('Numero sorteado: ' + bolicheiro.numero + '<br>');
+	document.write(numeroquinela1.nome + ' escolheu ' + numeroquinela1.numero +'<br>');
+	document.write(numeroquinela2.nome + ' escolheu ' + numeroquinela2.numero +'<br>');
+	if(numeroquinela1.verificarseganhou(bolicheiro.numero))
+	{
+		documet.write(numeroquinela1.nome + ' ganhou <br>');
+	}
+	if(numeroquinela2.verificarseganhou(bolicheiro.numero))
+	{
+		documet.write(numeroquinela2.nome + ' ganhou <br>');
+	}
+</script>
+</body>
+</html>

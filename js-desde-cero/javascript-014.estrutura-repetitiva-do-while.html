@@ -1,0 +1,33 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+ var valor;
+
+ do 
+ {
+ valor=prompt('coloque um valor entre 0 e 999 :');
+ valor=parseInt(valor);
+ document.write('O valor '+valor+' tem ');
+ if(valor<10)
+ {
+ document.write('Tem 1 digito');
+ }
+ else
+ {
+  if(valor<100)
+  {
+    document.write('Tem 2 digitos');
+  }
+   else
+   {
+     document.write('Tem 3 digitos');
+   }
+  }
+   document.write('<br>');
+ } 
+ while(valor!=0);
+</script>
+</body>
+</html>

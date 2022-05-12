@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+function esvaziar(controle)
+{
+	controle.value="";
+}
+function verificarEntrada(controle)
+{
+	if(controle.value=="")
+		alert('deve ingressar dados');
+}
+</script>
+<form>
+<input type="text" id="nome" onFocus="esvaziar(this)" onBlur="verificarEntrada(this)" value="nome"><br>
+<input type="text" id="idade" onFocus="esvaziar(this)" onBlur="verificarEntrada(this)" value="mail"><br>
+<input type="button" value="Confirmar">
+</form>
+</body>
+</html>

@@ -1,0 +1,1 @@
+o arquivo do tutorial funcoes.js // do espanhol dunciones.js foi renomeado para javascript-039.js

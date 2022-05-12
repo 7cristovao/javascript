@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<p>A linguagem JavaScript permite agrupar funções e dispô-las em um arquivo separado a da página HTML.
+Isso traz muitos benefícios:
+<br>
+1-Reutilização de funções em muitos arquivos. 
+<br>
+Não tempos que copiar e colar sucessivamente as funções nas páginas que necessitamos.
+<br>
+2-Facilita a manutenção das funções ao se encontrar em arquivos separados.
+<br>
+3-Nos obriga a ser mais organizados.
+<br>
+</p>
+<br>
+<p>
+<br>
+A mecânica para implementar estes arquivos externos no JavaScript é:
+<br>
+1-Criar um arquivo com extensão *.js e tipar as funções na mesma;
+<br>
+2-Criar um arquivo html que utilizará as funções contidas no arquivo *.js;
+<br>
+3-Dispor o seguinte código para importar o arquivo *.js:
+<!--  <script type="text⁄javascript" scr="funcoes.js><⁄script>  -->
+<br> &lt;script type=&quot;text&frasl;javascript&quot; scr=&quot;funcoes.js&gt;&lt;&frasl;script><br>
+<br>
+<br>
+-Mediante a propriedade src indicamos o nome do arquivo para importar.
+-Logo, podemos chamar dentro da página HTML, as funções que contém o arquivo externo *.js; em nosso exemplo chamamos as funções retornaData() e retornaHora().
+<br>
+-O arquivo html fica muito mais limpo.
+<br>
+-Se quer provar em seu equipamento este exemplo pode descarregar o editor de texto NotePad++
+<br>
+-Deve-se tipar os dois arquivos e os armazenamentos em uma pasta do disco rígido:
+<br>
+-funcoes.js
+<br>
+-e a página html (pagina1.html):
+<br>
+-Procederemos para abrir desde o navegador o arquivo: pagina1.html e veremos como se chamam as funções contidas no arquivo js:
+<br>
+</body>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function mostrarData(meses,dias)
+	{
+		var num;
+		num=prompt("Ingresse numero de mes: ");
+		num=parseInt(num);
+		document.write('Corresponde ao mes: '+meses[num-1]);
+		document.write('<br>');
+		document.write('Tem '+dias[num-1]+' dias');
+	}
+
+	var meses;
+	meses=new Array(12);
+	meses[0]='Janeiro';
+	meses[1]='Fevereiro';
+	meses[2]='Marco';
+	meses[3]='Abril';
+	meses[4]='Maio';
+	meses[5]='Junho';
+	meses[6]='Julho';
+	meses[7]='Agosto';
+	meses[8]='Setembro';
+	meses[9]='Outubro';
+	meses[10]='Novembro';
+	meses[11]='Dezembro';
+
+	var dias;
+	dias=new Array(12);
+	dias[0]=31;
+	dias[1]=28;
+	dias[2]=31;
+	dias[3]=30;
+	dias[4]=31;
+	dias[5]=30;
+	dias[6]=31;
+	dias[7]=31;
+	dias[8]=30;
+	dias[9]=31;
+	dias[10]=30;
+	dias[11]=31;
+	mostrarData(meses,dias);
+</script>
+</body>
+</html>

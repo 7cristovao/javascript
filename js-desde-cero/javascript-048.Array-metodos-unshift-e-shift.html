@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var vec=[];
+		var f;
+		var valor;
+		do {
+			valor=prompt('Ingressar um valor (0 para finalizar)',"");
+			valor=parseInt(valor);
+			if(valor<100)
+			{
+				vec.unshift(valor);
+			}
+			else
+			{
+				vec.push(valor);
+			}
+		}while (valor!=0);
+		vec.shift();
+		for(f=0;f<vec.length;f++)
+		{
+			document.write(vec[f]+'<br>');
+		}
+	</script>
+</body>
+</html>

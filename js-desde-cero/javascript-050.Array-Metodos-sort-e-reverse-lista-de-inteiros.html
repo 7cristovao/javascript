@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var vec=[100,5,60,3,90];
+		var f;
+		document.write('Vetor antes de ordená-lo<br>');
+		for(f=0;f<vec.length;f++)
+		{
+			document.write(vec[f]+'<br>');
+		}
+		vec.sort(function(v1,v2){
+			if(v1>v2)
+				return 1;
+			else
+				return 0;
+		});
+		document.write('Vetor depois de ordená-lo<br>'); 
+		for(f=0;f<vec.length;f++)
+		{
+			document.write(vec[f]+'<br>');
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+
+function formatarData(dia,mes,ano)
+{
+ var s='Hoje eh '+dia+' de  ';
+ switch(mes) 
+ {
+ case 1:s=s+'janeiro';
+        break;
+ case 2:s=s+'fevereiro';
+        break;
+ case 3:s=s+'marco';
+        break;
+ case 4:s=s+'abril';
+        break;
+ case 5:s=s+'maio';
+        break;
+ case 6:s=s+'junho';
+        break;
+ case 7:s=s+'julho;
+        break;
+ case 8:s=s+'agosto';
+        break;
+ case 9:s=s+'setembro';
+        break;
+ case 10:s=s+'outubro';
+        break;
+ case 11:s=s+'novembro';
+        break;
+ case 12:s=s+'dezembro';
+        break;
+ }
+ s=s+' de '+ano;
+ return s;
+}
+
+ var fec = formatarData(11,6,2013);
+ document.write(fec);
+
+</script>
+</body>
+</html>
+</p>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function mostrarDataHora()
+	{
+		var data
+		data = new Date();
+		document.write('Hoje é ');
+		document.write(data.getDate()+'/');
+		document.write((data.getMonth()+1)+'/');
+		document.write((data.getFullYear()));
+		document.write('<br>');
+		document.write('Agora são ');
+		document.write(data.getHours()+':');
+		document.write(data.getMinutes()+':');
+		document.write(data.getSeconds());
+	}
+
+//Chamada para a funcao
+mostrarDataHora();
+</script>
+</body>
+</html>
+

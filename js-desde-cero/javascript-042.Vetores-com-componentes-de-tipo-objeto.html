@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<!-- A CLASSE HIPERVINCULO EH: -->
+<script type="text/javascript">
+function Hipervinculo(direcao,titulo)
+{
+	this.direcao=direcao;
+	this.titulo=titulo;
+	this.retornarhipervinculo=retornarhipervinculo;
+}
+
+function retornarhipervinculo()
+{
+	var cadeia;
+	cadeia='<a href=' + this.direcao + '>' + this.titulo + '</a>';
+	return cadeia;
+}
+</script>
+
+<!-- LOGO O BLOCO ONDE SE USA A CLASSE HIPERVINCULO EH: -->
+
+<script type="text/javascript">
+var vector=new Array(3);
+vector[0]=new Hipervinculo('http://www.google.com','google');
+vector[1]=new Hipervinculo('http://www.msn.com','msn');
+vector[2]=new Hipervinculo('http://www.yahoo.com','yahoo');
+for(var f=0;f<vector.length;f++)
+{
+	document.write(vector[f].retornarhipervinculo());
+	document.write('<br>');
+}
+
+</script>
+</body>	
+</html>

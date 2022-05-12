@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+function alterarCor()
+{
+	var selecao=document.getElementById('select1');
+	document.getElementById('text1').value=selecao.selectedIndex;
+	document.getElementById('text2').value=selecao.options[selecao.selectedIndex].text;
+	document.getElementById('text3').value=selecao.options[selecao.selectedIndex].value;
+}		
+</script>
+<form>
+	<select id="select1" onChange="alterarCor()">
+		<option value="0xff0000">Vermelho</option>
+		<option value="0x00ff00">Verde</option>
+		<option value="0x0000ff">Azul</option>
+	</select>
+	<br>
+	Numero de indice selecionado do objeto SELECT:<input type="text" id="text1"><br>
+	Texto selecionado:<input type="text" id="text2"><br>
+	Valor associado:<input type="text" id="text3"><br>
+</form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang=pt-BR>
+<head>
+<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+function abrir()
+{
+	var janela=open();
+	janela.document.write("Estou escrevendo na nova janela<br>");
+	janela.document.write("Segunda linha");
+}
+function abrirParametros()
+{
+	var janela=open(",",'status=yes,width=400,height=250,menubar=yes');
+	janela.document.write("isto eh o primeiro que aparece<br>");
+}
+function mostrarAlerta()
+{
+	alert("Esta janela de alerta ja utilizamos em outros problemas");
+}
+function confirmar()
+{
+	var resposta=confirm("Pressione algum dos dois botoes");
+	if(resposta==true)
+		alert("pressionou aceitar");
+	else
+		alert("pressionou cancelar");
+}
+function carregarCadeia()
+{
+	var cad=prompt("carregue uma cadeia:","");
+	alert("Voce ingressou"+cad);
+}
+</script>
+Este programa permite analizar a chamada para distintas responsabilidades do objeto window.
+<form>
+	<br>
+	<input type="button" value="open()" onClick="abrir()">
+	<br>
+	<input type="button" value="open con parametros" onclick="abrirParametros()">
+	<br>
+	<input type="button" value="alert" onClick="mostrarAlerta()">
+	<br>
+	<input type="button" value="confirm" onClick="confirmar()">
+	<br>
+	<input type="button" value="prompt" onClick="carregarCadeia()">
+</form>
+</body>
+</html>

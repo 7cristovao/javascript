@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var vec=new Array(10);
+		var f;
+		for(f=0;f<vec.length;f++)
+		{
+			vec[f]=parseInt(Math.random()*1000);
+		}
+		vec.sort(function(v1,v2){
+			if(v1>v2)
+				return 1;
+			else
+				return 0;
+		});
+		document.write('Vetor ordenado em forma crescente<br>'); 
+		for(f=0;f<vec.length;f++)
+		{
+			document.write(vec[f]+'<br>');
+		}
+		vec.reverse();
+		document.write('Vector ordenado em forma descendente<br>');
+		for(f=0;f<vec.length;f++)
+		{
+			document.write(vec[f]+'<br>');
+		}
+	</script>
+</body>
+</html>

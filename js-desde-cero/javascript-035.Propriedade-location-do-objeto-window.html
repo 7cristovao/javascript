@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+/*
+ _________      ____________        ___________
+ |        |     |          |        |         |
+ | window |-----| document |--------| anchors ||
+ |________|  |  |__________|    |   |_________||      
+             |                  |     _________|
+             |  ____________    |   ___________
+             |  |          |    |   |         |
+             ---| frames   ||   |---| forms   ||
+             |  |__________||   |   |_________||
+             |    __________|   |     _________|
+             |  ___________     |   ___________
+             |  |         |     |   |         |
+             |--| history |     |---| images  ||
+             |  |_________|     |   |_________||   
+             |                  |     _________|
+             |  ____________    |   ___________
+             |  |          |    |   |         |
+             ---| location |    |---| links   ||
+             |  |__________|    |   |_________||
+             |                  |     _________|
+             |  ____________    |   ___________
+             |  |           |   |   |          |
+             |--| navigator |   |---| location |
+             |  |___________|       |__________|    
+             |                  
+             |  ____________    
+             |  |          |    
+             ---| screen   |    
+                |__________|    
+ */
+function verificarEntrada()
+{
+	if(window.confirm('Deseja sair da pagina e ingressar ao periodico La Nacion?'))
+	{
+		window.location='http://www.lanacion.com.ar';
+	}
+	else
+		window.alert('Nao ha problema');
+}
+</script>
+<a href="javascript:verificarEntrada()">Ingressar ao La Nacion</a>
+</body>
+</html>

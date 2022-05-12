@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var depositos=[];
+		var nro,monto;
+		do {
+			nro=prompt('Ingresse nro de cliente',"");
+			nro=parseInt(nro);
+			if(nro!=0)
+			{
+				monto=prompt('Ingresse monto a depositar',"");
+				monto=parseInt(monto);
+				depositos[nro]=monto;
+			}
+		} while (nro!=0);
+		var soma=0;
+		var canti=0;
+		for(var f=0;f<depositos.length;f++)
+		{
+			if(depositos[f]!==undefined)
+			{
+				soma=soma+depositos[f];
+				canti++;
+			}
+		}
+		document.write('Quantidade de depósitos: '+canti+'<br>');
+		document.write('Total depositado por todos os clientes: '+soma);
+	</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/> 
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function carregar(soldos)
+	{
+		var f;
+		for(f=0;f<soldos.length;f++)
+		{
+			var v;
+			v=prompt('ingresse soldo:');
+			soldos[f]=parseInt(v);
+		}
+	}
+
+	function calcularGastos(soldos) 
+	{
+		var total=0;
+		var f;
+		for (f=0; f<soldos.length;f++)
+		{
+			total=total+soldos[f];
+		}
+		document.write('Lista de soldos<br>');
+		for(f=0;f<soldos.lenght;f++)
+		{
+			document.write(soldos[f]+'<br>');
+		}
+	document.write('Total de gastos em soldos:'+total);
+	}
+
+	var soldos;
+	soldos=new Array(5);
+	carregar(soldos);
+	calcularGastos(soldos);
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+ var num1,num2,num3;
+
+ num1=prompt('Digite o primeiro numero: ');
+ num2=prompt('Digite o segundo numero: ');
+ num3=prompt('Digite o terceiro numero: ');
+
+//convertemos os tres strings em inteiros
+
+ num1=parseInt(num1);
+ num2=parseInt(num2);
+ num3=parseInt(num3);
+ 
+ if (num1>num2 && num1>num3)
+ {
+ document.write('o maior eh o '+num1);
+ }
+ else
+ {
+  if (num2>num3)
+  {
+  document.write('omaior eh o '+num2);
+  }
+  else
+  {
+  document.write('o maior eh o '+num3);
+  }
+ }
+</script>
+</body>
+</html>
