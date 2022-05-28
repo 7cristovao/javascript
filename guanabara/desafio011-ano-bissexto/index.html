@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Ano Bissexto</title>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 2.5em;
+}
+h2{
+    font-weight: normal;
+}
+#button{
+    font-size: 1.8em;
+    padding: 25px 15px 25px 15px;
+}
+</style>
+</head>
+<body>
+<h1>Ano Bissexto</h1>
+<script>
+function clicar(){
+    ano = prompt('Qual é o ano que você quer verificar?')
+    ano = parseInt(ano)
+    if (ano % 400 == 0)
+    {
+        clique.innerHTML = `O ano de ${ano} é bissexto`
+    }
+    else
+    {
+        if(ano % 4 == 0 && ano % 100 != 0)
+        {
+            clique.innerHTML = `O ano de ${ano} é bissexto`
+        }
+        else
+        {
+            clique.innerHTML = `O ano de ${ano} não é bissexto`
+        }
+    }
+}
+</script>
+<form>
+<input type="button" value="Verificar" onclick="clicar()" id="button">
+<h2 id="clique">Informe um ano para saber se ele é bissexto</h2>
+</form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Resolvendo Bhaskara</title>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 2.5em;
+}
+h2{
+    font-weight: normal;
+}
+#button{
+    font-size: 1.8em;
+    padding: 25px 15px 25px 15px;
+}
+</style>
+</head>
+<body>
+<h1>Resolvendo Bhaskara</h1>
+<script>
+    var a, b, c
+function clicar(){
+    a = prompt('Qual o valor de a?')
+    a = parseFloat(a)
+    b = prompt('Qual o valor de b?')
+    b = parseFloat(b)
+    c = prompt('Qual o valor de c?')
+    c = parseFloat(c)
+    delta = (b*b)-4*a*c
+    delta = parseFloat(delta)
+    clique.innerHTML = '<h1>Resolvendo Bhaskara</h1><br><br>'+
+    `A equação atual é ${a}x² + ${b}x + ${c} = 0`+'<br>'+
+    `O cálculo realizado será Δ = ${b}² - 4 . ${a} . ${c}`+'<br>'+
+    `O valor calculado foi de Δ = ${delta}`
+}
+</script>
+<form>
+<input type="button" value="Calcular" onclick="clicar()" id="button">
+<h2 id="clique">Considerando uma equação no formato ax² + bx + c = 0, aperte o botão acima para calcular o valor de Δ</h2>
+</form>
+</body>
+</html>

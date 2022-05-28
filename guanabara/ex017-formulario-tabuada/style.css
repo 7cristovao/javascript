@@ -1,0 +1,16 @@
+body{
+    background-color: #383838;
+    font-family: Arial, helvetica, sans-serif;
+    }
+h1{
+    color: #ffffff;
+    text-align: center;
+}
+section{
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgba(0,0,0,0.306);
+    margin: auto;
+    width: 500px;
+}

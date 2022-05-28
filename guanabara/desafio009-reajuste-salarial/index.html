@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Reajustar Salário</title>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#button{
+    font-size: 1.8em;
+    padding: 25px 10px 25px 10px;
+}
+h2{
+    font-weight: normal;
+}
+</style>
+</head>
+<body>
+<script>
+function clicar(){
+    var nome = prompt('Qual o nome do funcionário?')
+    var salario = prompt(`Qual o salário de ${nome}?`)
+    salario = parseFloat(salario)
+    var reajuste = prompt(`O salário de ${nome} será reajustado em qual porcentagem?`)
+    clique.innerHTML = `${nome} recebeu um aumento salarial! <br>`+
+    `O salário atual era ${salario} <br>`+
+    `Com um aumento de ${reajuste}, o salário vai aumentar ${salario*reajuste} no próximo mês <br>`+
+    `E a partir daí, ${nome} vai passar a ganhar R$ ${salario+(salario*reajuste)}.`
+
+}
+</script>
+<h1>Reajuste Salarial</h1>
+<input type="button" onclick="clicar()" value="Reajustar Salário" id="button">
+<h2 id="clique">Clique no botão acima para iniciar</h2>
+</body>
+</html>

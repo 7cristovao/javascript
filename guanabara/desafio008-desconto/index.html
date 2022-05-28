@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Cálculo de Desconto</title>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 2.5em;
+}
+#button{
+    font-size: 1.5em;
+    padding: 25px 15px 25px 15px;
+}
+h2{
+    font-weight: normal;
+}
+</style>
+</head>
+<body>
+<h1>Calcular Desconto</h1>
+<script type="text/javascript">
+function clicar(){
+    produto = prompt('Qual é o produto que você está comprando?')
+    preco = prompt(`Qual é o preço de um ${produto}?`)
+    preco = parseFloat(preco)
+    clique.innerHTML = `<h1>Calculando desconto de 10% para ${produto}<h1>`+
+        '<br>'+
+        `<h2> O preço original era de R$ ${preco.toFixed(2)}`+'<br>'+
+        `Você acaba de ganhar R$ ${(preco*0.1).toFixed(2)} de desconto`+'<br>'+
+        `No fim você vai pagar R$ ${(preco*0.9).toFixed(2)} no produto ${produto}.</h2>`
+}
+</script>
+<form>
+<input type="button" value="Desconto de 10%" onclick="clicar()" id="button">
+<h2 id="clique">Clique no botão acima para iniciar</h2>
+</form>
+</body>
+</html>
