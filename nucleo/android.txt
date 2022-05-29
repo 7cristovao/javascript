@@ -1,0 +1,27 @@
+Recomendações de aplicativos para Android:
+
+Editores de texto:
+Acode
+https://play.google.com/store/apps/details?id=com.foxdebug.acodefree
+
+JS Run
+https://play.google.com/store/search?q=js+run&c=apps
+
+Gerenciador de arquivos:
+FX
+https://play.google.com/store/search?q=fx&c=apps
+
+Interpretador:
+Dory - node.js
+https://play.google.com/store/apps/details?id=io.tempage.dorynode
+
+Console:
+HTML Inspect Element & JS console
+https://play.google.com/store/apps/details?id=com.tyrostudio.devbrowser
+
+F12 - Inspect Element | Console | Network | Media
+https://play.google.com/store/apps/details?id=com.asfmapps.f12
+
+Navegador:
+Chrome
+https://play.google.com/store/search?q=chrome&c=apps
