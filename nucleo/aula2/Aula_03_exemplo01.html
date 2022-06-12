@@ -1,1 +1,44 @@
-
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Árvore DOM no JavaScript</title>
+</head>
+<body>
+  <h1 id="titulo">Aula 2 exemplos de Get/Set</h1>
+  <input type="submit" value="Aperte aqui" onclick="clicar()">
+  
+  <input type="checkbox">
+  <input type="button" value="Botão" id="botao" onclick="mudouDeCor3()">
+  <input name="seletorDeCores" type="color" onchange="mudouDeCor()" >
+  <input name="seletorDeCores2" type="color" onchange="mudouDeCor2()" >
+  <div id="listaDeDizeres">
+    <ul>
+      <li class="classe1">A horta do condomínio Dandara é automatizada</li>
+      <li class="classe2">Hoje o dia está bonito</li>
+      <li class="classe3">A luta é pra valer</li>
+      <li class="classe4">Hoje tem assembleia</li>
+    </ul>
+  </div>
+  <script>
+    function clicar(){
+      document.getElementById("titulo").textContent = "Eu sei fazer um get/set"
+    }
+    
+    function mudouDeCor(){
+      let corDoTitulo = document.getElementsByName("seletorDeCores")[0].value
+      document.getElementById("titulo").style.color = corDoTitulo
+    }
+  </script>
+  <script>
+    function mudouDeCor2(){
+      let corDoFundo = document.getElementsByName("seletorDeCores2")[0].value
+      document.querySelector("div").style.backgroundColor = corDoFundo
+    }
+    
+    function mudouDeCor3(){
+      document.querySelector("div").style.backgroundColor = "#FFFF00"
+    }
+  </script>
+</body>
+</html>
