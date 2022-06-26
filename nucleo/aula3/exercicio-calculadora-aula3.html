@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calcular</title>
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #102019;
+        color: white;
+    }
+    input{
+        background-color: white;
+        color: black;
+    }
+    section{
+        background-color: #005c46;
+        color: white;
+        padding: 20px;
+        width: 300px;
+        border-radius: 15px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Formulário para calcular</h1>
+    <section>
+        <p>
+            <input type="number" name="num1" id="num1">
+        </p>
+        <p>
+            <input type="number" name="num2" id="num2">
+        </p>
+    <label for="operacao">Operação</label>
+    <select name="operacao" id="operacao">
+        <option value="mais">+</option>
+        <option value="menos">-</option>
+        <option value="vezes">*</option>
+        <option value="divisao">/</option>
+    </select>
+    <p>
+        <button id="refresh" onclick=calcular()>Calcular</button>
+    </p>
+    <div id="saida">
+        <!--Saída-->
+    </div>
+    <div id="saida2">
+    </div>
+    <div id="saida3">
+    </div>
+    <div id="saida4">
+    </div>
+    <div id="saida5">
+    </div>
+    <div id="saida6">
+    </div>
+    </section>
+<script>
+    let valor1 = parseFloat(document.getElementById('num1').value)
+    let valor2 = parseFloat(document.getElementById('num2').value)
+    let operador = document.getElementById('operacao').value
+
+    function somar(valor1,valor2){
+        return valor1 + valor2
+    }
+    function subtrair(valor1,valor2){
+        return valor1 - valor2
+    }
+    function multiplicar(valor1,valor2){
+        return valor1 * valor2
+    }
+    function dividir(valor1,valor2){
+        return valor1 / valor2
+    }
+
+    if (operador === "divisao"){
+        saida.innerHTML = `O resultado é igual a ${dividir(valor1,valor2)}.`
+    }
+    else if (operador === "vezes"){
+        saida.innerHTML = `O resultado é igual a ${multiplicar(valor1,valor2)}.`
+    }
+    else if (operador === "menos"){
+        saida.innerHTML = `O resultado é igual a ${subtrair(valor1,valor2)}.`
+    }
+    else if (operador === "mais"){
+        saida.innerHTML = `O resultado é igual a ${somar(valor1,valor2)}.`
+    }
+    else{
+        saida.innerHTML = `0`
+    }
+
+
+    saida2.innerHTML = `O operador escolhido foi o ${operador}.`
+    saida3.innerHTML = `O resultado da soma é igual a ${somar(valor1,valor2)}.`
+
+    saida4.innerHTML = `O resultado da subtração é igual a ${subtrair(valor1,valor2)}.`
+    saida5.innerHTML = `O resultado da multiplicação é igual a ${multiplicar(valor1,valor2)}.`
+    saida6.innerHTML = `O resultado da divisão é igual a ${dividir(valor1,valor2)}.`
+
+    var btn = document.querySelector("#refresh");
+    btn.addEventListener("click", function() {
+    
+    location.reload();
+});
+</script>
+</body>
+</html>
