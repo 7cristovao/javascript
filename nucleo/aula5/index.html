@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>While em JavaScript</title>
+</head>
+<body>
+    <h1>Tabela da Feira</h1>
+
+    <div class="form-group">
+        <label for="inputFruta"> Fruta: </label>
+        <input type="text" value="" id="inputFruta"/><br>
+    </div>
+    <div class="form-group">
+        <label for="inputPreco"> Preço: </label>
+        <input type="text" value="" id="inputPreco"/><br><br>
+    </div>
+    <div class="form-group">
+        <button onclick="clickAdicionaFruta()">Adicionar</button>
+    </div>
+    <br><br>
+
+    <table>
+        <thead><th>Fruta</th><th>Preço</th></thead>
+        <tbody id="tabelaFruta"></tbody>
+        <tfoot id="tdTotal"><td></td><td id="elementoTotal"></td></tfoot>
+    </table>
+</body>
+<!--
+<script src="vetor_feira.js"></script>
+-->
+<!--
+<script src="matriz_feira_correcao.js"></script>
+-->
+<script src="plantao2.js"></script>
+</html>
