@@ -1,0 +1,17 @@
+//nova branch
+git checkout -b cristovao
+
+//definir branch
+git push --set-upstream origin cristovao
+
+//adicionar arquivos
+git add .
+
+//dar commit
+git commit -m "primeira pratica"
+
+//empurrar os arquivos pro repositorio 
+git push
+
+//ou usar denovo
+git push --set-upstream origin cristovao
