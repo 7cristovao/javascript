@@ -1,3 +1,7 @@
+Para editar o Token:
+
+https://github.com/settings/tokens
+
 Comandos para o github:
 
 1) No terminal, entrar na pasta principal onde está o arquivo index.html e digite cada linha de comando:
